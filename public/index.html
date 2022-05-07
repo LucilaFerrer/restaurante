@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>DROP Burger - Inicio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  </head>
+  <body class="orange">
+    <header>
+      <div class="contenedor color-menu">
+        <div class="flex-logo"><img src="images/dropburger-logo.png" alt="drop burger"></div>
+        <div class="flex-menu">
+          <nav class="shift">
+            <ul>
+              <li><a href="/">INICIO</a></li>
+              <li><a href="platillos.html">PLATILLOS</a></li>
+              <li><a href="registrar.html">REGISTRAR</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="slider orange">
+      <div class="fade">
+        <div class="image"><img src="images/hamburguesa-beef-small.png" alt=""></div>
+        <div class="image"><img src="images/hamburguesa-chicken-small.png" alt=""></div>
+        <div class="image"><img src="images/pepito-beef-small.png" alt=""></div>
+      </div>
+    </div>
+    <p></p>
+    <div class="contenedor-texto">
+      <div class="flex-texto">
+        <h2>Acerca de DROP Burger</h2>
+        <p>Estamos ubicados en la Avenida Cecilio Acosta con la Avenida 9-B.
+          Te esperamos para que pruebes las mejores hamburguesas de Maracaibo
+          con ese sabor que nos caracteriza.</p>
+        <br>
+        <button class="boton1" onclick="location.href='platillos.html';">VER MENU COMPLETO</button>
+      </div>
+      <div class="flex-texto">
+        <div class="mapouter"><div class="gmap_canvas"><iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=drop%20burger,%20maracaibo&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org">123movies</a><br><style>.mapouter{position:relative;text-align:right;height:400px;width:500px;}</style><a href="https://www.embedgooglemap.net">html google maps</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:500px;}</style></div></div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&nbsp;</p>
+    </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.fade').slick({
+          dots: true,
+          infinite: true,
+          speed: 500,
+          // fade: true,
+          cssEase: 'linear',
+          slidesToShow: 2,
+          slidesToScroll: 1
+        });
+      });
+    </script>
+  </body>
+</html>

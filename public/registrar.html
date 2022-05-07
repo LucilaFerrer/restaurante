@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>DROP Burger - Registrar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  </head>
+  <body class="orange">
+    <header>
+      <div class="contenedor color-menu">
+        <div class="flex-logo"><img src="images/dropburger-logo.png" alt="drop burger"></div>
+        <div class="flex-menu">
+          <nav class="shift">
+            <ul>
+              <li><a href="/">INICIO</a></li>
+              <li><a href="platillos.html">PLATILLOS</a></li>
+              <li><a href="registrar.html">REGISTRAR</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="contenedor">
+      <div class="flex-menu">
+        <h2>Registrar Plato:</h2>
+        <form action="" id="formulario">
+          <div class="div-tabla">
+            <div class="div-fila">
+              <div class="div-celda div-celda-200"><label for="plato">Nombre del plato: </label></div>
+              <div class="div-celda div-celda-500"><input type="text" id="plato" name="plato"></div>
+            </div>
+            <div>
+              <div class="div-celda div-celda-200"><label for="ingredientes">Ingredientes: </label></div>
+              <div class="div-celda div-celda-500">
+                <div class="div-tabla">
+                  <div class="div-fila">
+                    <div class="div-celda">Panes:</div>
+                  </div>
+                  <div class="div-fila">
+                    <div class="div-celda">
+                      <input name="nombre" id="nombre" type="checkbox" value="Pan artesanal"><label for="nombre">Pan artesanal</label>
+                      <input name="nombre" id="nombre" type="checkbox" value="Pan de Pepito"><label for="nombre">Pan de Pepito</label>
+                    </div>
+                  </div>
+                  <div class="div-fila">
+                    <div class="div-celda">Carnes:</div>
+                  </div>
+                  <div class="div-fila">
+                    <div class="div-celda">
+                      <input name="nombre" id="nombre" type="checkbox" value="jugosa torta de res de 150 grs. hecha en casa"><label for="nombre">jugosa torta de res de 150 grs. hecha en casa</label>
+                      <input name="nombre" id="nombre" type="checkbox" value="jugosa pechuga de pollo empanizada"><label for="nombre">jugosa pechuga de pollo empanizada</label>
+                      <input name="nombre" id="nombre" type="checkbox" value="carne de lomito asado"><label for="nombre">carne de lomito asado</label>
+                    </div>
+                  </div>
+                  <div class="div-fila">
+                    <div class="div-celda">Vegetales:</div>
+                  </div>
+                  <div class="div-fila">
+                    <div class="div-celda">
+                      <input name="nombre" id="nombre" type="checkbox" value="Lechuga"><label for="nombre">Lechuga</label>
+                      <input name="nombre" id="nombre" type="checkbox" value="Tomate"><label for="nombre">Tomate</label>
+                      <input name="nombre" id="nombre" type="checkbox" value="Cebolla"><label for="nombre">Cebolla</label>
+                      <input name="nombre" id="nombre" type="checkbox" value="Cebolla Caramelizada"><label for="nombre">Cebolla Caramelizada</label>
+                      <input name="nombre" id="nombre" type="checkbox" value="Piña Asada"><label for="nombre">Piña Asada</label>
+                      <input name="nombre" id="nombre" type="checkbox" value="Jalapeños"><label for="nombre">Jalapeños</label>
+                      <input name="nombre" id="nombre" type="checkbox" value="Hongos"><label for="nombre">Hongos</label>
+                    </div>
+                  </div>
+                  <div class="div-fila">
+                    <div class="div-celda">Salsas:</div>
+                  </div>
+                  <div class="div-fila">
+                    <div class="div-celda">
+                      <input name="nombre" id="nombre" type="checkbox" value="salsa de mango"><label for="nombre">salsa de mango</label>
+                      <input name="nombre" id="nombre" type="checkbox" value="salsa chipotle"><label for="nombre">salsa chipotle</label>
+                      <input name="nombre" id="nombre" type="checkbox" value="salsa tártara"><label for="nombre">salsa tártara</label>
+                    </div>
+                  </div>
+                  <div class="div-fila">
+                    <div class="div-celda">Extras:</div>
+                  </div>
+                  <div class="div-fila">
+                    <div class="div-celda">
+                      <input name="nombre" id="nombre" type="checkbox" value="queso mozarella"><label for="nombre">queso mozarella</label>
+                      <input name="nombre" id="nombre" type="checkbox" value="queso cheddar"><label for="nombre">queso cheddar</label>
+                    </div>
+                  </div>
+                  <div class="div-fila">
+                    <div class="div-celda">Acompañantes:</div>
+                  </div>
+                  <div class="div-fila">
+                    <div class="div-celda">
+                      <input name="nombre" id="nombre" type="checkbox" value="acompañada de papas fritas"><label for="nombre">papas fritas</label>
+                      <input name="nombre" id="nombre" type="checkbox" value="acompañada de aros de cebolla"><label for="nombre">aros de cebolla</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="div-celda div-celda-200"><label for="precio">Precio: </label></div>
+              <div class="div-celda div-celda-500"><input type="number" id="precio" name="precio"></div>
+            </div>
+            <div>
+              <div class="div-celda div-celda-200"></div>
+              <div class="div-celda div-celda-500"><button type="submit" id="submit">Registrar</button></div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="js/app.js"></script>
+    <footer>
+      <p>&nbsp;</p>
+    </footer>
+  </body>
+</html>
