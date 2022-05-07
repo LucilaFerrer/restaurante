@@ -130,7 +130,7 @@ if(form) {
               showConfirmButton: false,
               timer: 1500
             }).then(function() {
-              window.location = `listar.html`;
+              window.location = `platillos.html`;
             });
           }
           else
